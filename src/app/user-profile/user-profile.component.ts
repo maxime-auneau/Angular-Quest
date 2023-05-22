@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "./User";
 
 @Component({
@@ -15,11 +15,14 @@ export class UserProfileComponent implements OnInit {
     'https://randomuser.me/api/portraits/lego/2.jpg'
   );
 
+
+  userName: string = "User";
+  isAdmin: boolean = false;
+
   ngOnInit(): void {
   }
 
   showAge = () => {
-    // make div visible or not when clicked on button in the css
     const age: HTMLElement | null = document.getElementById('age')!;
     if ("style" in age) {
       if (age.style.display === 'block') {
@@ -27,6 +30,15 @@ export class UserProfileComponent implements OnInit {
       } else {
         age.style.display = 'block';
       }
+    }
+  }
+
+  isAdminConnected = () => {
+    this.isAdmin = !this.isAdmin;
+    if (this.isAdmin) {
+      this.userName = `Admin ${this.user.firstName} ${this.user.name}`;
+    } else {
+      this.userName = "User";
     }
   }
 }
