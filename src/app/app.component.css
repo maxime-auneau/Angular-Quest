@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+}
+
+.top-right {
+  position: absolute;
+  top: 1vh;
+  left: 92vw;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 87vh;
+  left: 1vw;
+}
+
+.bottom-right {
+  position: absolute;
+  top: 87vh;
+  left: 92vw;
+}
