@@ -1,0 +1,15 @@
+<div class="user_profile">
+  <div class="user_photo">
+    <img src="{{user.photo}}" alt="the user photography"/>
+  </div>
+  <div class="user_info">
+    <p>Name: {{user.name}}</p>
+    <p>FirstName: {{user.firstName}}</p>
+    <p id="age" style="display: block">Age: {{user.age}}</p>
+    <p>{{user.quote}}</p>
+    <div class="user_input">
+      <input type="text" [(ngModel)]="user.quote" id="input_field">
+      <button (click)="showAge()" id="button">Afficher/Masquer mon âge</button>
+    </div>
+  </div>
+</div>
