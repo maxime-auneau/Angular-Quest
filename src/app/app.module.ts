@@ -11,6 +11,8 @@ import { RouterModule } from "@angular/router";
 import ROUTES from './app.routes';
 import { SignupComponent } from './signup/signup.component';
 import { MenuComponent } from './menu/menu.component';
+import { DevelopperComponent } from './developper/developper.component';
+import { SkillComponent } from './skill/skill.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { MenuComponent } from './menu/menu.component';
     HomeComponent,
     SignupComponent,
     MenuComponent,
+    DevelopperComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
