@@ -20,7 +20,7 @@ import { MenuComponent } from './menu/menu.component';
     UserProfileComponent,
     HomeComponent,
     SignupComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

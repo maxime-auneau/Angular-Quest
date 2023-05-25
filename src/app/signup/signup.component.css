@@ -1,4 +1,12 @@
-/** make the design of the form **/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .form-signin {
   padding: 15px;
   max-width: 800px;
@@ -7,6 +15,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form-signin fieldset {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
+  border: none;
+}
+
+.form-signin fieldset label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-signin fieldset input {
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-signin fieldset input:focus {
+  transition: border-color 0.3s ease-in-out;
+  border-bottom: 1px solid #000;
+}
+
+.form-signin fieldset div {
+  margin-top: 10px;
+  color: red;
+}
+
+.form-signin fieldset input:valid {
+  border-bottom: 1px solid #0f0;
 }
 
 .form-signin .form-signin-heading {
@@ -35,6 +82,24 @@
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/* make the button style */
+.form-signin button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-signin button:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #333;
 }
 
 
