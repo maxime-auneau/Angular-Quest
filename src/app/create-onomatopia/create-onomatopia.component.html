@@ -1,0 +1,7 @@
+<form>
+  <div style="display: flex; flex-direction: column; max-width: 250px;">
+    <label style="margin-bottom: 10px" for="onomatopia">Nouvelle Onomatopée</label>
+    <input type="text" name="onomatopia" id="onomatopia" [(ngModel)]="newOnomatopia">
+    <button style="margin-top: 10px" type="submit" (click)="createOnomatopia()">Submit</button>
+  </div>
+</form>
