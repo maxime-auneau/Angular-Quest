@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { DevelopperComponent } from './developper/developper.component';
 import { SkillComponent } from './skill/skill.component';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia
     DevelopperComponent,
     SkillComponent,
     CreateOnomatopiaComponent,
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,
