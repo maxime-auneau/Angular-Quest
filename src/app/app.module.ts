@@ -15,6 +15,7 @@ import { DevelopperComponent } from './developper/developper.component';
 import { SkillComponent } from './skill/skill.component';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

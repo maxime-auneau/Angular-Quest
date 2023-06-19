@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Mojito",
+        "price": 10,
+        "image": "https://www.cocktails-road.fr/images/recipe/2021/03/mojito.jpg"
+    },
+    {
+        "name": "Cosmopolitan",
+        "price": 13,
+        "image": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/80274_origin-scaled.jpg"
+    },
+    {
+        "name": "Pina Colada",
+        "price": 8,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvvYFp6uevaPQaHi4MtntEfWC_J85uqtU3bg&usqp=CAU"
+    }
+]
