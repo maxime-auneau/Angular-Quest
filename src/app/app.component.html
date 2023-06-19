@@ -1,10 +1,8 @@
 <app-menu></app-menu>
-<p>{{test}}</p>
-<h1>Liste des onomatopées</h1>
-<ul>
-  <li *ngFor="let onomatopoeia of onomatopoeiaList">{{ onomatopoeia }}</li>
-</ul>
 
-<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
-
+<div class="card">
+  <p>L'image du jour de la NASA datant du {{imgOfTheDay.date}}: <b>{{imgOfTheDay.title}}</b></p>
+  <img [src]="imgOfTheDay.hdurl" alt="Image of the day" class="img-fluid" *ngIf="imgOfTheDay" width="40%" height="40%">
+  <p>{{ imgOfTheDay.explanation }}</p>
+</div>
 <router-outlet></router-outlet>
