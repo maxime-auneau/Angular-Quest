@@ -1,0 +1,52 @@
+/* pokedex-page.component.css */
+.pokedex-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* pokemon-list.component.css */
+.pokemon-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon-list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.pokemon-list li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* pokemon-detail.component.css */
+.pokemon-detail img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+/* create-pokemon-page.component.css */
+.form-group {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

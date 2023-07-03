@@ -1,0 +1,13 @@
+<h1>Pokédex</h1>
+
+<div class="pokedex-container">
+  <div class="pokemon-list-container">
+    <h2>Liste des Pokémons</h2>
+    <app-pokemon-list [pokemons]="pokemons" (pokemonClicked)="onPokemonClicked($event)"></app-pokemon-list>
+  </div>
+  
+  <div class="pokemon-detail-container">
+    <h2>Détails du Pokémon</h2>
+    <app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<ul class="pokemon-list">
+  <li *ngFor="let pokemon of pokemons" (click)="onPokemonClick(pokemon)">
+    <img [src]="pokemon.imageUrl" alt="Image du Pokémon" width="100px">
+    <span>{{ pokemon.name }}</span>
+  </li>
+</ul>
